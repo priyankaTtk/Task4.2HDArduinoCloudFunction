@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light Control</title>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Custom JavaScript -->
+    <script src="script.js" defer></script> <!-- Use defer to ensure the script loads after the DOM -->
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="color: black;">Traffic Light Control</h1>
+
+        <div class="traffic-light">
+            <!-- Red Light Toggle -->
+            <div class="light-toggle">
+                <div class="light red-light"></div>
+                <div class="toggle-btn" id="toggleRed">
+                    <div class="inner-circle"></div>
+                </div>
+                <p>Red Light</p>
+            </div>
+
+            <!-- Yellow Light Toggle -->
+            <div class="light-toggle">
+                <div class="light yellow-light"></div>
+                <div class="toggle-btn" id="toggleYellow">
+                    <div class="inner-circle"></div>
+                </div>
+                <p>Yellow Light</p>
+            </div>
+
+            <!-- Green Light Toggle -->
+            <div class="light-toggle">
+                <div class="light green-light"></div>
+                <div class="toggle-btn" id="toggleGreen">
+                    <div class="inner-circle"></div>
+                </div>
+                <p>Green Light</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    background-image: url('https://live.staticflickr.com/4737/39525871431_3a1fced07d_h.jpg'); /*  image URL */
+    background-size: cover; /* Makes the background cover the entire area */
+    background-position: center; /* Centers the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.traffic-light {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.light-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.red-light.on {
+    background-color: red;
+}
+
+.yellow-light.on {
+    background-color: yellow;
+}
+
+.green-light.on {
+    background-color: green;
+}
+
+.toggle-btn {
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #ddd;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn.active {
+    background-color: #4caf50;
+}
+
+.inner-circle {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: left 0.3s ease;
+}
+
+.toggle-btn.active .inner-circle {
+    left: 26px;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
